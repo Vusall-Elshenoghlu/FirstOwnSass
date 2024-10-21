@@ -1,0 +1,433 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.column,
+.column2 {
+  padding: 1.5rem;
+}
+
+#basliq {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+#basliq .menu {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#basliq .menu .bizpro {
+  font-size: 25px;
+}
+#basliq .menu .bizpro a {
+  font-style: italic;
+  color: red;
+}
+#basliq .menu .nav-list {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  margin-right: 80px;
+}
+#basliq .menu .nav-list .nav-list-item a {
+  color: white;
+  transition: all 1s ease;
+}
+#basliq .menu .nav-list .nav-list-item :hover {
+  color: red;
+}
+
+#hero {
+  background-image: url(https://preview.colorlib.com/theme/bizpro/images/home/slide-2.jpg);
+  height: 110vh;
+  width: 100%;
+  position: relative;
+}
+#hero .hero1 {
+  position: absolute;
+  left: 33%;
+  top: 40%;
+}
+#hero .hero1 h1 {
+  font-size: 50px;
+  color: white;
+}
+#hero .hero1 p {
+  font-size: 20px;
+  color: white;
+  margin-left: 70px;
+}
+#hero .hero1 button {
+  font-size: 20px;
+  color: white;
+  border: 1px solid red;
+  width: 250px;
+  padding: 15px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+#hero .hero1 button :hover {
+  background-color: red;
+}
+#hero .hero1 button a {
+  color: white;
+}
+
+#aboutBizPro {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutBizPro .about-text {
+  margin-top: 100px;
+}
+#aboutBizPro .about-text h1 {
+  bottom: 70%;
+  font-size: 50px;
+  margin-left: 400px;
+}
+#aboutBizPro .about-text .underline {
+  width: 25px;
+  height: 3px;
+  background-color: red;
+  margin: 10px auto 20px auto;
+}
+#aboutBizPro .about-text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+#aboutBizPro .row {
+  display: flex;
+  justify-content: space-around;
+}
+#aboutBizPro .column {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+}
+#aboutBizPro .column h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 15px 0;
+}
+#aboutBizPro .column p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+#aboutBizPro .icon-container {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  transition: background-color 0.3s ease;
+}
+#aboutBizPro .icon-container i {
+  font-size: 40px;
+  color: gray;
+}
+#aboutBizPro .icon-container:hover {
+  background-color: red;
+}
+#aboutBizPro .more-details {
+  padding: 10px 20px;
+  border: 2px solid red;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#aboutBizPro .more-details:hover {
+  background-color: red;
+  color: white;
+}
+
+#services {
+  background-color: grey;
+  height: 136vh;
+  text-align: center;
+}
+#services .service-and-lorem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services .service-and-lorem h1 {
+  margin-top: 40px;
+  font-size: 50px;
+  color: white;
+}
+#services .service-and-lorem .underline {
+  width: 25px;
+  height: 3px;
+  background-color: red;
+  margin: 10px auto 20px auto;
+}
+#services .service-and-lorem p {
+  font-size: 20px;
+  color: white;
+}
+#services .row {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px auto;
+}
+#services .column {
+  height: 200px;
+  width: 400px;
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-width: 250px;
+  margin-top: 100px;
+}
+#services .column .service-box {
+  height: 300px;
+  width: 400px;
+  text-align: center;
+  padding: 100px;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+#services .column .service-box i {
+  font-size: 50px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+#services .column .service-box p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0;
+}
+#services .service-box:hover {
+  background-color: #333;
+  color: white;
+}
+#services .service-box:hover i {
+  color: white;
+}
+#services .service-box:hover p {
+  color: white;
+}
+
+#meetOurTeam .meet-and-lorem {
+  text-align: center;
+  margin-top: 100px;
+}
+#meetOurTeam .meet-and-lorem h1 {
+  font-size: 30px;
+}
+#meetOurTeam .meet-and-lorem .underline {
+  width: 25px;
+  height: 3px;
+  background-color: red;
+  margin: 10px auto 20px auto;
+}
+#meetOurTeam .meet-and-lorem p {
+  font-size: 20px;
+}
+#meetOurTeam .row {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#meetOurTeam .row .text {
+  margin-bottom: 15px;
+  width: 88%;
+  height: 60px;
+  background-color: rgb(193, 167, 167);
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+#meetOurTeam .row .text h2 {
+  font-size: 20px;
+  color: gray;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 575.98px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  #desktopNav {
+    display: none;
+  }
+  #mobileNav {
+    display: flex;
+  }
+  #mobileNav .fa-bars {
+    font-size: 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  #desktopNav {
+    display: none;
+  }
+  #mobileNav {
+    display: flex;
+  }
+  #mobileNav .fa-bars {
+    font-size: 30px;
+  }
+  #hero .hero1 {
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hero .hero1 h1 {
+    width: 100%;
+  }
+  #hero .hero1 p {
+    width: 50%;
+  }
+  #hero .hero1 button {
+    transform: translateX(-130px);
+  }
+  #aboutBizPro {
+    width: 100%;
+    height: 120vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 50%;
+  }
+  #desktopNav {
+    display: none;
+  }
+  #mobileNav {
+    display: flex;
+  }
+  #mobileNav .fa-bars {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .column {
+    width: 50%;
+  }
+  .column2 {
+    width: 50%;
+  }
+  #desktopNav {
+    display: flex;
+  }
+  #mobileNav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .column {
+    width: 50%;
+  }
+  .column2 {
+    width: 25%;
+  }
+  #desktopNav {
+    display: flex;
+  }
+  #mobileNav {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .column {
+    width: 50%;
+  }
+  .column2 {
+    width: 25%;
+  }
+  #desktopNav {
+    display: flex;
+  }
+  #mobileNav {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

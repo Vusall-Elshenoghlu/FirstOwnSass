@@ -1,0 +1,38 @@
+#basliq {
+    width: 100%;
+    position: fixed;
+        z-index: 2;
+    .menu {
+        
+        height: 90px;
+        @include flexWithoutDirection(flex,space-around, center);
+
+
+        .bizpro {
+            font-size: 25px;
+
+            a {
+                font-style: italic;
+                color: red;
+            }
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+            margin-right: 80px;
+
+            .nav-list-item {
+                a {
+                    color: white;
+                    transition: all 1s ease;
+                }
+
+                :hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}

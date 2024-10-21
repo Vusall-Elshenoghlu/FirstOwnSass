@@ -1,0 +1,11 @@
+@mixin flexWithoutDirection($display,$justify-content,$aligin-items){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $aligin-items;
+}
+@mixin flexWithDirection($display, $justify-content, $align-items, $flex-direction) {
+    display: $display;  
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
